@@ -12,6 +12,7 @@ function Home() {
               <th>Id</th>
               <th>Name</th>
               <th>Age</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -24,6 +25,11 @@ function Home() {
                             <td>{item.id}</td>
                             <td>{item.name}</td>
                             <td>{item.age}</td>
+                            <td>
+                                <Button onClick = {()=>alert(item.id)}>Edit</Button>
+                                &nbsp;
+                                <Button onClick = {()=>alert(item.id)}>Delete</Button>
+                            </td>
                         </tr>
                     )
                 })
